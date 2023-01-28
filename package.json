@@ -1,0 +1,23 @@
+{
+  "name": "doc-developer-vuepress",
+  "version": "0.0.1",
+  "homepage": "https://github.com/danilarov/doc-developer-vuepress",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "doc-developer-vuepress/",
+  "scripts": {
+    "start": "vuepress dev src",
+    "build": "vuepress build src",
+    "build-gh-pages": "gh-pages -d src/.vuepress/dist",
+    "deploy": "npm run build && npm run build-gh-pages"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "vuepress": "^1.9.7"
+  }
+}
