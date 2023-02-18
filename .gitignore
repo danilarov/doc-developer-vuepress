@@ -1,0 +1,7 @@
+node_modules
+# src/.vuepress/dist
+package-lock.json
+.npmignore.temp
+.cache
+.temp
+.vscode
