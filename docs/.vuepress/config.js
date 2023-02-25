@@ -15,7 +15,17 @@ export default defineUserConfig({
         text: 'Home',
         link: '/'
       },
-      '/guide/javascript/',
+      {
+        text: 'JavaScript',
+        children: [
+          '/guide/javascript/info/',
+          '/guide/javascript/function/',
+          '/guide/javascript/module/',
+          '/guide/javascript/terms/',
+          '/guide/javascript/theory/',
+          '/guide/javascript/standart/'
+        ]
+      },
       {
         text: 'Git',
         link: '/guide/git/',
@@ -29,7 +39,8 @@ export default defineUserConfig({
         text: 'Командная строка',
         link: '/guide/terminal',
         children: [
-          '/guide/terminal/commands'
+          '/guide/terminal/commands',
+          '/guide/terminal/instruction'
         ],
       },
       {
@@ -41,6 +52,7 @@ export default defineUserConfig({
       },
       '/guide/keys/',
       '/guide/npm/',
+      '/guide/lang/'
     ]
   }),
 })
